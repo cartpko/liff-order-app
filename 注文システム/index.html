@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>職員室注文システム</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>職員室注文フォーム</h1>
+
+    <label>名前</label>
+    <input type="text" id="userName" placeholder="例：山田太郎">
+
+    <label>職員室</label>
+    <select id="room">
+      <option value="職員室">職員室</option>
+      <option value="商業センター">商業センター</option>
+      <option value="生徒指導室">生徒指導室</option>
+      <option value="事務室">事務室</option>
+      <option value="進路指導室">生徒指導室</option>
+    </select>
+
+    <label>商品名</label>
+    <select id="item">
+      <option value="コーヒー">コーヒー</option>
+      <option value="お茶">お茶</option>
+      <option value="クッキー">クッキー</option>
+      <option value="チョコレート">チョコレート</option>
+    </select>
+
+    <label>数量</label>
+    <input type="number" id="quantity" value="1" min="1">
+
+    <button id="orderButton">注文する</button>
+    <p id="message"></p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
